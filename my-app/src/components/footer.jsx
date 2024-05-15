@@ -8,10 +8,10 @@ function Footer() {
       <footer id="footer" className="d-flex justify-content-center">
         <div>
         <a className="p-1" href="https://www.facebook.com/PowPACTheatre">
-          <img src={facebook} className="social img-fluid" width={35}></img>
+          <img src={facebook} className="social img-fluid" width={35} alt="black and white version of the facebook logo"></img>
         </a>
         <a className="p-1" href="https://www.instagram.com/poway_performing_arts_company/">
-          <img src={instagram} className="social img-fluid" width={35}></img>
+          <img src={instagram} className="social img-fluid" width={35} alt='black and white verision of the instagram logo'></img>
         </a>
         </div>
         <div>
