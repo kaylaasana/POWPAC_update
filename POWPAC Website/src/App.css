@@ -1,0 +1,27 @@
+
+/* header css */
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  height: auto; /* Ensure it adjusts based on image height */
+}
+
+#header img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  max-height: 50vh; /* Example: Set max height to 50% of viewport height */
+}
