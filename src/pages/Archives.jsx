@@ -2,6 +2,6 @@
 
 export default function Archives(){
     return(
-        <p>Hello world</p>
+        <p>this is the archives page</p>
     );
 }

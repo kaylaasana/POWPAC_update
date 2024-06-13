@@ -2,7 +2,7 @@
 
 export default function Auditions(){
     return(
-        <p>Hello world</p>
+        <p>this is the auditions page</p>
         
     );
 }

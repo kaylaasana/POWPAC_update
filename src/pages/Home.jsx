@@ -3,17 +3,17 @@
 import currentSeason from "../assets/The Butler Did It Postcard 1.png";
 
 export default function Home() {
-  //   const [active, setLink] = useState("/home");
+    // const [active, setLink] = useState("tickets");
 
   return (
     <>
-      <div className="home-container">
+      <div id="home-container" className="d-flex justify-content-center">
         <div className="content">
           <h2> Shows </h2>
           <section>
             <p> Current Season </p>
-            <div>
-              <img src={currentSeason} alt="text description"></img>
+            <div className="d-flex space-evenly">
+              <img className="current-season" src={currentSeason} alt="text description"></img>
               <div>
                 <p>TITLE</p>
                 <p>DATE RANGE</p>
@@ -41,8 +41,8 @@ export default function Home() {
           </section>
           <section>
             <p> Upcoming Season </p>
-            <div>
-              <img src={currentSeason} alt="text description"></img>
+            <div className="d-flex space-evenly">
+              <img className="upcoming-season" src={currentSeason} alt="text description"></img>
               <div>
                 <p>TITLE</p>
                 <p>DATE RANGE</p>

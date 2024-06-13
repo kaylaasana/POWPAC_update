@@ -2,6 +2,6 @@
 
 export default function AboutUs(){
     return(
-        <p>Hello world</p>
+        <p>this is the about us page</p>
     );
 }

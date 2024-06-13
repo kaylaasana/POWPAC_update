@@ -2,6 +2,6 @@
 
 export default function Tickets(){
     return(
-        <p>Hello world</p>
+        <p>this is the ticket page</p>
     );
 }

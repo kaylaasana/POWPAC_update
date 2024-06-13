@@ -1,5 +1,6 @@
 
-/* header css */
+/* /////////// header css /////////// */
+
 #header {
   width: 100%;
   display: flex;
@@ -19,9 +20,33 @@
   height: auto; /* Ensure it adjusts based on image height */
 }
 
+
 #header img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   display: block;
-  max-height: 50vh; /* Example: Set max height to 50% of viewport height */
+  max-height: 50vh;
+
+}
+
+/* /////////// homepage css /////////// */
+
+#home-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 3; /* Adjust the proportion as needed */
+  margin-right: 20px; /* Optional: space between the content and sidebar */
+}
+
+.sidebar {
+  flex: 1; /* Adjust the proportion as needed */
+}
+
+.current-season,
+.upcoming-season {
+  height: 20%;
+  width: 20%;
 }
