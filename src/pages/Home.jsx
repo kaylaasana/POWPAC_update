@@ -80,7 +80,7 @@ export default function Home() {
         <aside className="sidebar">
           <h3 className="special-updates"> Special Updates </h3>
             <section className="auditions-sidebar">
-              <p> Auditions </p>
+              <p className="auditions-title"> Auditions </p>
               <p>
                 {" "}
                 Interested in be a part of one of our upcoming shows? Fill out
@@ -99,7 +99,7 @@ export default function Home() {
               </button>
             </section>
             <section className="breaking-sidebar">
-              <p> Breaking News </p>
+              <p className="breaking-news"> Breaking News </p>
               <p>
                 {" "}
                 Some Content Goes Here. Lorem ipsum dolor sit amet, consectetur

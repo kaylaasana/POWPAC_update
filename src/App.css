@@ -92,3 +92,10 @@ h2 {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+.current,
+.upcoming,
+.auditions-title,
+.breaking-news {
+  font-size: large;
+}
