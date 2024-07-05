@@ -1,23 +1,27 @@
-// import { Link } from "react-router-dom";
-// import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import currentSeason from "../assets/The Butler Did It Postcard 1.png";
 
 export default function Home() {
-    // const [active, setLink] = useState("tickets");
+  const [active] = useState("tickets");
 
   return (
     <>
-      <div id="home-container" className="d-flex justify-content-center">
+      <div id="home-container">
         <div className="content">
           <h2> Shows </h2>
-          <section>
-            <p> Current Season </p>
+          <section className="seasons">
+            <p className="current"> Current Season </p>
             <div className="d-flex space-evenly">
-              <img className="current-season" src={currentSeason} alt="text description"></img>
+              <img
+                className="current-season"
+                src={currentSeason}
+                alt="text description"
+              ></img>
               <div>
-                <p>TITLE</p>
-                <p>DATE RANGE</p>
-                <p>
+                <p className="title">TITLE</p>
+                <p className="date-range">DATE RANGE</p>
+                <p className="current-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -27,26 +31,30 @@ export default function Home() {
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </p>
-                <button>
-                  {/* <Link 
+                <button className="tickets-button">
+                  <Link 
                   to="/tickets"
                   className={`${active === "tickets" ? "active" : ""} nav-link`}
                   aria-current="page"
                 >
                   Tickets
-                </Link> */}
+                </Link>
                 </button>
               </div>
             </div>
           </section>
-          <section>
-            <p> Upcoming Season </p>
+          <section className="seasons">
+            <p className="upcoming"> Upcoming Season </p>
             <div className="d-flex space-evenly">
-              <img className="upcoming-season" src={currentSeason} alt="text description"></img>
+              <img
+                className="upcoming-season"
+                src={currentSeason}
+                alt="text description"
+              ></img>
               <div>
-                <p>TITLE</p>
-                <p>DATE RANGE</p>
-                <p>
+                <p className="title">TITLE</p>
+                <p className="date-range">DATE RANGE</p>
+                <p className="upcoming-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -56,50 +64,50 @@ export default function Home() {
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </p>
-                <button>
-                  {/* <Link
+                <button className="tickets-button">
+                  <Link
                   to="/tickets"
                   className={`${active === "tickets" ? "active" : ""} nav-link`}
                   aria-current="page"
                 >
                   Tickets
-                </Link> */}
+                </Link>
                 </button>
               </div>
             </div>
           </section>
         </div>
         <aside className="sidebar">
-          <h3> Special Updates </h3>
-          <section>
-            <p> Auditions </p>
-            <p>
-              {" "}
-              Interested in be a part of one of our upcoming shows? Fill out the
-              audition form. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.{" "}
-            </p>
-            <button>
-              {/* <Link
-                  to="/tickets"
-                  className={`${active === "tickets" ? "active" : ""} nav-link`}
+          <h3 className="special-updates"> Special Updates </h3>
+            <section className="auditions-sidebar">
+              <p> Auditions </p>
+              <p>
+                {" "}
+                Interested in be a part of one of our upcoming shows? Fill out
+                the audition form. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.{" "}
+              </p>
+              <button>
+                <Link
+                  to="/auditions"
+                  className={`${active === "auditions" ? "active" : ""} nav-link`}
                   aria-current="page"
                 >
-                  Tickets
-                </Link> */}
-            </button>
-          </section>
-          <section>
-            <p> Breaking News </p>
-            <p>
-              {" "}
-              Some Content Goes Here. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.{" "}
-            </p>
-          </section>
-        </aside>
+                  Auditions
+                </Link>
+              </button>
+            </section>
+            <section className="breaking-sidebar">
+              <p> Breaking News </p>
+              <p>
+                {" "}
+                Some Content Goes Here. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.{" "}
+              </p>
+            </section>
+         </aside>
       </div>
     </>
   );

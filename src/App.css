@@ -1,4 +1,11 @@
 
+#root {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /* /////////// header css /////////// */
 
 #header {
@@ -18,6 +25,7 @@
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
   height: auto; /* Ensure it adjusts based on image height */
+  background-color: black;
 }
 
 
@@ -25,8 +33,8 @@
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   display: block;
-  max-height: 50vh;
-
+  max-height: 35vh;
+  max-width: 150vh;
 }
 
 /* /////////// homepage css /////////// */
@@ -36,17 +44,51 @@
   justify-content: space-between;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .content {
-  flex: 3; /* Adjust the proportion as needed */
-  margin-right: 20px; /* Optional: space between the content and sidebar */
+  flex: 3; 
+  margin-right: 20px;
+}
+
+.seasons {
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.auditions-sidebar,
+.breaking-sidebar {
+  padding: 5px;
 }
 
 .sidebar {
-  flex: 1; /* Adjust the proportion as needed */
+  flex: 1; 
 }
 
 .current-season,
 .upcoming-season {
-  height: 20%;
-  width: 20%;
+  height: 30%;
+  width: 30%;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.current,
+.upcoming,
+.special-updates {
+  display: flex;
+  justify-content: center;
+}
+
+.current-description,
+.upcoming-description,
+.title,
+.date-range,
+.tickets-button {
+  margin-left: 100px;
+  margin-right: 100px;
 }
