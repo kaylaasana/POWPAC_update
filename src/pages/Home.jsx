@@ -18,7 +18,7 @@ export default function Home() {
                 src={currentSeason}
                 alt="text description"
               ></img>
-              <div>
+              <div className="homepage-boxes">
                 <p className="title">TITLE</p>
                 <p className="date-range">DATE RANGE</p>
                 <p className="current-description">
@@ -51,7 +51,7 @@ export default function Home() {
                 src={currentSeason}
                 alt="text description"
               ></img>
-              <div>
+              <div className="homepage-boxes">
                 <p className="title">TITLE</p>
                 <p className="date-range">DATE RANGE</p>
                 <p className="upcoming-description">
