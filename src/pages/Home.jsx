@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div id="home-container">
         <div className="content">
-          <h2> Shows </h2>
+          <h2 className="shows-container"> Shows </h2>
           <section className="seasons">
             <p className="current"> Current Season </p>
             <div className="d-flex space-evenly">
