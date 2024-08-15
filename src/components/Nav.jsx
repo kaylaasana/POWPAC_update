@@ -5,7 +5,7 @@ function Nav() {
   const [active, setLink] = useState("home");
 
   return (
-    <nav id="navbar" className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -19,7 +19,7 @@ function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav w-100 d-lg-flex justify-content-lg-around">
+          <ul id="navbar" className="navbar-nav w-100 d-lg-flex justify-content-lg-around">
             <li className="nav-item" onClick={() => setLink("home")}>
               <Link to="/" className={`nav-link ${active === "home" ? "active" : ""}`} aria-current="page">
                 Home
