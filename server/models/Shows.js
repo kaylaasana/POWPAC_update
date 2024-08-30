@@ -19,11 +19,13 @@ const showsSchema = new Schema({
     production: {
         type: String,
         required: false,
+        unique: false,
         trim: true,
     },
     cast: {
         type: String,
         required: false,
+        unique: false,
         trim: true,
     }
 
