@@ -33,4 +33,4 @@ const showsSchema = new Schema({
 
 const Shows = model('shows', showsSchema);
 
-module.exports = Shows
+module.exports = Shows;
