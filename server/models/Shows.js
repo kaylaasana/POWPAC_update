@@ -1,8 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const showsSchema = new Schema({
-// fill once data points are received
-// Show Title, Dates of Performance, Directors, Producers, Cast (first name, last name)
+// Show Title, Dates of Performance, Directors, Producers, Cast
     title: {
         type: String,
         required: true,
