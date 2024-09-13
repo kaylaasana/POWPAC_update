@@ -11,18 +11,18 @@ const showsSchema = new Schema({
         trim: true,
     },
     datesOfPerformance: {
-        type: Date,
+        type: Object,
         required: false,
         trim: true,
     },
     production: {
-        type: String,
+        type: Array,
         required: false,
         unique: false,
         trim: true,
     },
     cast: {
-        type: String,
+        type: Array,
         required: false,
         unique: false,
         trim: true,

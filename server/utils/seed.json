@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Test Show 1",
+    "dateOfPerformance": { "showStart": "01-01-2021", "showEnd": "02-05-2021" },
+    "production": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"],
+    "cast": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"]
+  },
+  {
+    "title": "Test Show 2",
+    "dateOfPerformance": { "showStart": "02-24-2020", "showEnd": "03-15-2020" },
+    "production": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"],
+    "cast": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"]
+  },
+  {
+    "title": "Test Show 3",
+    "dateOfPerformance": { "showStart": "07-11-2006", "showEnd": "08-02-2006" },
+    "production": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"],
+    "cast": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"]
+  },
+  {
+    "title": "Test Show 4",
+    "dateOfPerformance": { "showStart": "10-31-1999", "showEnd": "11-25-1999" },
+    "production": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"],
+    "cast": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"]
+  },
+  {
+    "title": "Test Show 5",
+    "dateOfPerformance": { "showStart": "12-01-2021", "showEnd": "12-23-2021" },
+    "production": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"],
+    "cast": ["Jagger Gerardy", "Ray Mond", "Tessa Lamb", "Bozo"]
+  }
+]
