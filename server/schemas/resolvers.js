@@ -36,6 +36,25 @@ const resolvers = {
         console.log(error);
       }
     },
+
+    // get shows by date of performance
+    getShowsByDatesOfPerformance: async (parent, { datesOfPerformance }) => {
+      try {
+        // establish shows variable and how to find it by performance date
+        const shows = await Shows.find({
+          "datesOfPerformance.date": new RegExp(datesOfPerformance, "i"),
+        });
+        if (!shows) {
+          // display a custom error message if show is not found
+          throw new Error("Show not found");
+        }
+        // send an array of show objects associated with the date searched
+        return shows;
+      } catch (error) {
+        // console log the technical error message
+        console.log(error);
+      }
+    },
   },
 
   Mutation: {
