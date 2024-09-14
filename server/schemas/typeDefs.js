@@ -2,7 +2,6 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
   type Shows {
-    _id: ID!
     title: String!
     datesOfPerformance: String!
     production: String!
