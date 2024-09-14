@@ -19,6 +19,23 @@ const resolvers = {
         console.log(error);
       }
     },
+
+    // get show by title, should pull any show that matches that title for all dates of performance
+    getShowByTitle: async (parent, { title }) => {
+      try {
+        // establish shows variable and how to find any show that matches that title
+        const shows = await Shows.find({ title: new RegExp(title, "i") });
+        if (!shows) {
+          // display a custom error message if show is not found
+          throw new Error("Show not found");
+        }
+        // should send an array of show objects
+        return shows;
+      } catch (error) {
+        // console loge the technical error message
+        console.log(error);
+      }
+    },
   },
 
   Mutation: {
