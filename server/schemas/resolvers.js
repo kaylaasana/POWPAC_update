@@ -55,6 +55,25 @@ const resolvers = {
         console.log(error);
       }
     },
+
+    // get an array of show objects for a list of shows the name searched is associated with
+    getShowsByProduction: async (parent, { production }) => {
+      try {
+        // establish show variable and how to find it by a producers name
+        const shows = await Shows.find({
+          production: new RegExp(production, "i"),
+        });
+        if (!shows) {
+          // display a custom error message if show is not found
+          throw new Error("Show not found");
+        }
+        // sends an array of show objects associated with the name searched
+        return shows;
+      } catch (error) {
+        // console log the technical error message
+        console.log(error);
+      }
+    },
   },
 
   Mutation: {
