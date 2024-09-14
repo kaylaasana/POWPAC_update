@@ -74,6 +74,23 @@ const resolvers = {
         console.log(error);
       }
     },
+
+    // get an array of show objects for a list of shows the name searched is associated with
+    getShowByCast: async (parent, { cast }) => {
+      try {
+        // establish show variable and how to find it by a cast members name
+        const shows = await Shows.find({ cast: new RegExp(cast, "i") });
+        if (!shows) {
+          // display a custom error message if show is not found
+          throw new Error("Show not found");
+        }
+        // send an array of show objects associated with the name searched
+        return shows;
+      } catch (error) {
+        // console log the technical error message
+        console.log(error);
+      }
+    },
   },
 
   Mutation: {
