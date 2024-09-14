@@ -3,12 +3,16 @@ const { gql } = require('apollo-server');
 const typeDefs = gql`
   type Shows {
     title: String!
-    datesOfPerformance: String!
-    production: String!
-    cast: String!
+    datesOfPerformance: DatesOfPerformance
+    production: [String!]!
+    cast: [String!]!
   }
 
-  # Queries for Shows by different fields
+  type DatesOfPerformance {
+    startDate: String
+    endDate: String
+  }
+
   type Query {
     getShow(showID: ID!): Shows
     getShowsByTitle(title: String!): [Shows]
@@ -17,5 +21,6 @@ const typeDefs = gql`
     getShowsByCast(cast: String!): [Shows]
   }
 `;
+
 
 module.exports = typeDefs;
