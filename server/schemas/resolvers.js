@@ -95,6 +95,26 @@ const resolvers = {
 
   Mutation: {
     // establish mutations: (create: show, producer, cast), (update: show, producer, cast), (delete: show, producer, cast)
+    addShow: async (
+      parent,
+      { title, datesOfPerformance, production, cast }
+    ) => {
+      return await Shows.create({
+        title,
+        datesOfPerformance,
+        production,
+        cast,
+      });
+    },
+    updateShow: async (parent, {title, datesOfPerformance, production, cast}) => {
+      return await Shows.findOneAndUpdate(
+        {title: title},
+        {datesOfPerformance: datesOfPerformance},
+        {production: production},
+        {cast: cast},
+        {new: true}
+      )
+    }
   },
 };
 
