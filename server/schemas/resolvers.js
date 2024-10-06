@@ -95,26 +95,41 @@ const resolvers = {
 
   Mutation: {
     // establish mutations: (create: show, producer, cast), (update: show, producer, cast), (delete: show, producer, cast)
-    addShow: async (
+    createShow: async (
       parent,
       { title, datesOfPerformance, production, cast }
     ) => {
-      return await Shows.create({
-        title,
-        datesOfPerformance,
-        production,
-        cast,
-      });
+      try {
+        const show = await Shows.create({
+          title,
+          datesOfPerformance,
+          production,
+          cast,
+        });
+        return show;
+      } catch (error) {
+        console.log(error);
+        throw new Error("Failed to create new show");
+      }
     },
-    updateShow: async (parent, {title, datesOfPerformance, production, cast}) => {
+    updateShow: async (
+      parent,
+      { title, datesOfPerformance, production, cast }
+    ) => {
+      try {
       return await Shows.findOneAndUpdate(
-        {title: title},
-        {datesOfPerformance: datesOfPerformance},
-        {production: production},
-        {cast: cast},
-        {new: true}
-      )
+        { title: title },
+        { datesOfPerformance: datesOfPerformance },
+        { production: production },
+        { cast: cast },
+        { new: true }
+      );
+    } catch (error) {
+      console.log(error);
+        throw new Error("Failed to update show");
     }
+    },
+    // deleteShow: async(parent, {}),
   },
 };
 

@@ -2,6 +2,6 @@
 
 export default function Error(){
     return(
-        <p>this is an error page</p>
+        <p>This is an error page, please try refreshing or accessing a different page.</p>
     );
 }

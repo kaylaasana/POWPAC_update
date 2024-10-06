@@ -26,7 +26,7 @@ function Nav() {
               </Link>
             </li>
             <li className="nav-item" onClick={() => setLink("tickets")}>
-              <Link to="/tickets" className={`nav-link ${active === "tickets" ? "active" : ""}`} aria-current="page">
+              <Link to="https://app.arts-people.com/index.php?ticketing=powpa" className={`nav-link ${active === "tickets" ? "active" : ""}`} aria-current="page">
                 Tickets
               </Link>
             </li>

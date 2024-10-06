@@ -33,7 +33,7 @@ export default function Home() {
                 </p>
                 <button className="tickets-button">
                   <Link 
-                  to="/tickets"
+                  to="https://app.arts-people.com/index.php?ticketing=powpa"
                   className={`${active === "tickets" ? "active" : ""} nav-link`}
                   aria-current="page"
                 >
@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
                 <button className="tickets-button">
                   <Link
-                  to="/tickets"
+                  to="https://app.arts-people.com/index.php?ticketing=powpa"
                   className={`${active === "tickets" ? "active" : ""} nav-link`}
                   aria-current="page"
                 >
