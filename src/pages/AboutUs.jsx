@@ -1,9 +1,9 @@
 export default function AboutUs() {
   return (
-    <div>
-      <div>
-        <h2>About Us</h2>
-        <p>
+    <div id="aboutUs-page">
+      <div id="aboutUs-container">
+        <h2 id="aboutUs-title">About Us</h2>
+        <p id="aboutUs-text">
           This is a paragraph about PowPAC. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -27,32 +27,34 @@ export default function AboutUs() {
           mollit anim id est laborum.
         </p>
       </div>
-      <div>
+      <div id="boardMembers-container">
         <h3>Board Members</h3>
+        <div id="figures">
         <figure>
-          <img src="../assets/David_Dartt.jpg"></img>
+          <img src="src\assets\David_Dartt.jpg" width={250} height={300}></img>
           <figcaption>
-            President<br></br>David Dartt
+           <b>President</b><br></br><p id="board-name">David Dartt</p>
           </figcaption>
         </figure>
         <figure>
-          <img src="../assets/SteveMurdock.png"></img>
+          <img src="src\assets\SteveMurdock.png" width={250} height={300}></img>
           <figcaption>
-            Vice President<br></br>Steven Murdock
+          <b>Vice President</b><br></br><p id="board-name">Steven Murdock</p>
           </figcaption>
         </figure>
         <figure>
-          <img src="../assets/Joye_Davisson.jpg"></img>
+          <img src="src\assets\Joye_Davisson.jpg" width={250} height={300}></img>
           <figcaption>
-            Secretary<br></br>Joye Davisson
+          <b>Secretary</b><br></br><p id="board-name">Joye Davisson</p>
           </figcaption>
         </figure>
         <figure>
-          <img src="../assets/WalkenhorstED1.jpg"></img>
+          <img src="src\assets\WalkenhorstED1.jpg" width={250} height={300}></img>
           <figcaption>
-            Treasurer<br></br>Kari Seagren Walkenborst
+          <b>Treasurer</b><br></br><p id="board-name">Kari Seagren Walkenborst</p>
           </figcaption>
         </figure>
+        </div>
       </div>
     </div>
   );

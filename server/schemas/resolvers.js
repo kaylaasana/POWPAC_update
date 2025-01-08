@@ -21,7 +21,7 @@ const resolvers = {
     },
 
     // get show by title, should pull any show that matches that title for all dates of performance
-    getShowByTitle: async (parent, { title }) => {
+    getShowsByTitle: async (parent, { title }) => {
       try {
         // establish shows variable and how to find any show that matches that title
         const shows = await Shows.find({ title: new RegExp(title, "i") });
@@ -76,7 +76,7 @@ const resolvers = {
     },
 
     // get an array of show objects for a list of shows the name searched is associated with
-    getShowByCast: async (parent, { cast }) => {
+    getShowsByCast: async (parent, { cast }) => {
       try {
         // establish show variable and how to find it by a cast members name
         const shows = await Shows.find({ cast: new RegExp(cast, "i") });

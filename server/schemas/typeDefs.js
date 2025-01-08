@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+const { gql } = require("graphql-tag");
 
 const typeDefs = gql`
   type Shows {
@@ -24,17 +24,17 @@ const typeDefs = gql`
   type Mutation {
     createShow(
       title: String!
-      datesOfPerformance: DatesOfPerformanceInput!,
+      datesOfPerformance: String!,
       production: [String!]!,
       cast: [String!]!
-    ): Show
+    ): Shows
     updateShow(
       title: String!
-      datesOfPerformance: DatesOfPerformanceInput!,
+      datesOfPerformance: String!,
       production: [String!]!,
       cast: [String!]!
-    ): Show
-    deleteShow(showID: ID!): Show
+    ): Shows
+    deleteShow(showID: ID!): Shows
   }
 `;
 

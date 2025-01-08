@@ -19,32 +19,55 @@ function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul id="navbar" className="navbar-nav w-100 d-lg-flex justify-content-lg-around">
-            <li className="nav-item" onClick={() => setLink("home")}>
-              <Link to="/" className={`nav-link ${active === "home" ? "active" : ""}`} aria-current="page">
+          <ul
+            id="navbar"
+            className="navbar-nav w-100 d-lg-flex justify-content-lg-around"
+          >
+            <Link
+              to="/"
+              className={`nav-link ${active === "home" ? "active" : ""}`}
+              aria-current="page"
+            >
+              <li className="nav-item" onClick={() => setLink("home")}>
                 Home
-              </Link>
-            </li>
-            <li className="nav-item" onClick={() => setLink("tickets")}>
-              <Link to="https://app.arts-people.com/index.php?ticketing=powpa" className={`nav-link ${active === "tickets" ? "active" : ""}`} aria-current="page">
+              </li>
+            </Link>
+            <Link
+              to="https://app.arts-people.com/index.php?ticketing=powpa"
+              className={`nav-link ${active === "tickets" ? "active" : ""}`}
+              aria-current="page"
+            >
+              <li className="nav-item" onClick={() => setLink("tickets")}>
                 Tickets
-              </Link>
-            </li>
-            <li className="nav-item" onClick={() => setLink("auditions")}>
-              <Link to="/auditions" className={`nav-link ${active === "auditions" ? "active" : ""}`} aria-current="page">
+              </li>
+            </Link>
+            <Link
+              to="/auditions"
+              className={`nav-link ${active === "auditions" ? "active" : ""}`}
+              aria-current="page"
+            >
+              <li className="nav-item" onClick={() => setLink("auditions")}>
                 Auditions
-              </Link>
-            </li>
-            <li className="nav-item" onClick={() => setLink("archives")}>
-              <Link to="/archives" className={`nav-link ${active === "archives" ? "active" : ""}`} aria-current="page">
+              </li>
+            </Link>
+            <Link
+              to="/archives"
+              className={`nav-link ${active === "archives" ? "active" : ""}`}
+              aria-current="page"
+            >
+              <li className="nav-item" onClick={() => setLink("archives")}>
                 Archives
-              </Link>
-            </li>
-            <li className="nav-item" onClick={() => setLink("about-us")}>
-              <Link to="/about-us" className={`nav-link ${active === "about-us" ? "active" : ""}`} aria-current="page">
+              </li>
+            </Link>
+            <Link
+              to="/about-us"
+              className={`nav-link ${active === "about-us" ? "active" : ""}`}
+              aria-current="page"
+            >
+              <li className="nav-item" onClick={() => setLink("about-us")}>
                 About Us
-              </Link>
-            </li>
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

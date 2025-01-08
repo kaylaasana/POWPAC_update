@@ -58,11 +58,17 @@ const startApolloServer = async () => {
   
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
-    
+  
     app.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
+  } else {
+    // Fallback for development: handle `/` route
+    app.get('/', (req, res) => {
+      res.send('Backend server is running. Frontend is served separately.');
+    });
   }
+  
   
 //   app.use('/graphql', expressMiddleware(server, {
 //     context: authMiddleware
@@ -71,7 +77,7 @@ const startApolloServer = async () => {
   db.once('open', () => {
     app.listen(PORT, () => {
       console.log(`API server running on port ${PORT}!`);
-      console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
+      console.log(`Use GraphQL at http://localhost:${PORT}/`);
     });
   });
 };
