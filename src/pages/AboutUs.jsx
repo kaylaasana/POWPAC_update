@@ -33,25 +33,25 @@ export default function AboutUs() {
         <figure>
           <img src="src\assets\David_Dartt.jpg" width={250} height={300}></img>
           <figcaption>
-           <b>President</b><br></br><p id="board-name">David Dartt</p>
+           <b id="board-title">President</b><br></br><p id="board-name">David Dartt</p>
           </figcaption>
         </figure>
         <figure>
           <img src="src\assets\SteveMurdock.png" width={250} height={300}></img>
           <figcaption>
-          <b>Vice President</b><br></br><p id="board-name">Steven Murdock</p>
+          <b id="board-title">Vice President</b><br></br><p id="board-name">Steven Murdock</p>
           </figcaption>
         </figure>
         <figure>
           <img src="src\assets\Joye_Davisson.jpg" width={250} height={300}></img>
           <figcaption>
-          <b>Secretary</b><br></br><p id="board-name">Joye Davisson</p>
+          <b id="board-title">Secretary</b><br></br><p id="board-name">Joye Davisson</p>
           </figcaption>
         </figure>
         <figure>
           <img src="src\assets\WalkenhorstED1.jpg" width={250} height={300}></img>
           <figcaption>
-          <b>Treasurer</b><br></br><p id="board-name">Kari Seagren Walkenborst</p>
+          <b id="board-title">Treasurer</b><br></br><p id="board-name">Kari Seagren Walkenborst</p>
           </figcaption>
         </figure>
         </div>

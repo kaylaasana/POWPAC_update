@@ -100,13 +100,8 @@ html, body {
   }
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-
 /* /////////// homepage/AboutUs css /////////// */
+
 div {
   background-color: #ECE5F0;
 }
@@ -131,11 +126,6 @@ div {
   height: 100%; 
   text-align: center;
   padding: 20px;
-}
-
-#aboutUs-title {
-  margin: 0;
-  font-size: 2em;
 }
 
 #boardMembers-container{
@@ -165,6 +155,10 @@ div {
 #figures figcaption {
   text-align: center;
   margin-top: 10px;
+}
+
+#board-title {
+  font-size: large;
 }
 
 #board-name {
@@ -257,4 +251,12 @@ footer {
   background-color: #ECE5F0;
   margin: 0px;
   font-size: small;
+
+}
+
+#footer-address,
+#footer-email,
+#footer-phone {
+  padding: 1px;
+  margin: 0px;
 }
