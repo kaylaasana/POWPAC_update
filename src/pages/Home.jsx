@@ -7,9 +7,9 @@ export default function Home() {
 
   return (
     <>
-      <div id="home-container">
+      <div className="main-page" id="home-container">
         <div className="content">
-          <h2 className="shows-container"> Shows </h2>
+          <h2 className="shows"> Shows </h2>
           <section className="seasons">
             <p className="current"> Current Season </p>
             <div className="d-flex space-evenly">

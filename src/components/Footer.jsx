@@ -5,7 +5,7 @@ import instagram from "../assets/black_ig_logo.png";
 function Footer() {
     // return footer element with links to facebook and instagram accounts, address and contact information
     return (
-      <footer id="footer" className="d-flex flex-column align-items-center justify-content-center">
+      <footer id="footer" className="main-page d-flex flex-column align-items-center justify-content-center">
         <div className="d-flex justify-content-center mb-2">
         <a className="p-1" href="https://www.facebook.com/PowPACTheatre">
           <img src={facebook} className="social img-fluid" width={35} alt="black and white version of the facebook logo"></img>

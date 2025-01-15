@@ -2,6 +2,6 @@
 
 export default function Archives(){
     return(
-        <p>This page is under construction.</p>
+        <p className="main-page">This page is under construction.</p>
     );
 }

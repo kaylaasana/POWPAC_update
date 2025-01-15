@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <div id="aboutUs-page">
+    <div className="main-page" id="aboutUs-page">
       <div id="aboutUs-container">
         <h2 id="aboutUs-title">About Us</h2>
         <p id="aboutUs-text">
@@ -28,7 +28,7 @@ export default function AboutUs() {
         </p>
       </div>
       <div id="boardMembers-container">
-        <h3>Board Members</h3>
+        <h3 id="board-members">Board Members</h3>
         <div id="figures">
         <figure>
           <img src="src\assets\David_Dartt.jpg" width={250} height={300}></img>
