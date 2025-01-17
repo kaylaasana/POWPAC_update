@@ -103,7 +103,7 @@ html, body {
   }
 }
 
-/* /////////// homepage/AboutUs css /////////// */
+/* /////////// homepage css /////////// */
 
 .main-page{
   /* background-color: #ECE5F0; */
@@ -115,75 +115,6 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-}
-
-#aboutUs-page{
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-#aboutUs-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%; 
-  text-align: center;
-  padding: 20px;
-}
-
-#boardMembers-container{
-  flex-wrap: wrap;
-  justify-items: center;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-#figures {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; 
-  gap: 20px; 
-  padding: 10px;
-  border-width: 5px;
-}
-
-#figures figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#figures figcaption {
-  text-align: center;
-  margin-top: 10px;
-}
-
-#board-title {
-  font-style: normal;
-}
-
-#board-name {
-  font-size: small;
-}
-
-#aboutUs-title,
-#board-members {
-  padding-top: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-#aboutUs-text {
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .shows {
@@ -255,6 +186,78 @@ html, body {
 .homepage-boxes {
   padding: 2px;
 }
+
+/* /////////// about us css /////////// */
+
+#aboutUs-page{
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#aboutUs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  text-align: center;
+  padding: 20px;
+}
+
+#boardMembers-container{
+  flex-wrap: wrap;
+  justify-items: center;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#figures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 10px;
+  border-width: 5px;
+}
+
+#figures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#figures figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#board-title {
+  font-style: normal;
+}
+
+#board-name {
+  font-size: small;
+}
+
+#aboutUs-title,
+#board-members {
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#aboutUs-text {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 
 /* /////////// footer css /////////// */
 
